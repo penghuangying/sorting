@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0,0,0,0.08);;
+}
+h3{
+    text-align: center;
+}
+#container{
+    max-width: 800px;
+    padding: 10px 30px 40px;
+    background: #FFF;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    margin: 30px auto;
+    border-radius: 3px;
+}
+
+.flex-container{
+    margin: 50px 0 40px;
+    display: flex;
+    align-items: flex-end;
+}
+.flex-item{
+    flex: 1 1 auto;
+    text-align: center;
+    height: 20px;
+    background: blanchedalmond;
+    margin: 0 15px;
+    position: relative;
+}
+.flex-item.focus{
+    animation: focusAnimate 0.5s;
+    -moz-animation: focusAnimate 0.5s;	/* Firefox */
+    -webkit-animation: focusAnimate 0.5s;	/* Safari 和 Chrome */
+    -o-animation: focusAnimate 0.5s;	/* Opera */
+}
+
+button{
+    border: 1px solid rgba(0,0,0,0.3);
+    background: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button[disabled]{
+    cursor: not-allowed;
+}
+
+@keyframes focusAnimate
+{
+    0%   {background: blanchedalmond;}
+    50%  {background: yellow;}
+    100% {background: blanchedalmond;}
+}
+
+@-moz-keyframes focusAnimate /* Firefox */
+{
+    0%   {background: blanchedalmond;}
+    50%  {background: yellow;}
+    100% {background: blanchedalmond;}
+}
+
+@-webkit-keyframes focusAnimate /* Safari 和 Chrome */
+{
+    0%   {background: blanchedalmond;}
+    50%  {background: yellow;}
+    100% {background: blanchedalmond;}
+}
+
+@-o-keyframes focusAnimate /* Opera */
+{
+    0%   {background: blanchedalmond;}
+    50%  {background: yellow;}
+    100% {background: blanchedalmond;}
+}
